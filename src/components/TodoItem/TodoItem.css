@@ -1,0 +1,58 @@
+li .todo-item {
+    display: grid;
+    grid-template-rows: 2vh 1fr 3vh;
+    border: 1px solid #e7e7e7;
+    box-shadow: 1px 1px 5px #ebf0f5;
+}
+li .todo-item > span {
+    font-size: .7em;
+    font-weight: 700;
+    text-align: right;
+    padding: 0.3em 1em;
+}
+li .todo-item div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em 1em;
+    align-items: center;
+}
+li .todo-item div:first-of-type button {
+    padding: 0;
+    width: 5%;
+}
+li .todo-item div:first-of-type button i {
+    font-size: 1.1em;
+    color: #b8b8b8;
+    width: auto!important;
+}
+.completed {
+    color: #227C70!important;
+}
+.doing {
+    color:#FED049!important;
+}
+.nuevaTarea {
+    background-color: #f3f6f9;
+}
+li .todo-item div:first-of-type p {
+    width: 90%;
+    font-size: 1.05em;
+    font-weight: 500;
+}
+li .todo-item div:first-of-type textarea {
+    width: 90%;
+    resize: none;
+    font-size: 1.05em;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    padding: 0.1em 0.5em;
+    word-wrap: break-word;
+}
+li .todo-item div:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(2, calc(100% / 2));
+}
+li .todo-item div:last-of-type button {
+    font-size: .8em;
+}

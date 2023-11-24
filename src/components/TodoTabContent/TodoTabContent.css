@@ -1,0 +1,26 @@
+#content article#todosContent {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    height: 98%;
+    grid-template-rows: 4vh 5vh 73vh;
+    row-gap: 0.5vh;
+}
+#content article#todosContent.home {
+    grid-template-rows: 4vh 80vh;
+}
+#content article#todosContent div::-webkit-scrollbar { display:none }
+#content article#todosContent div {
+    height: 100%;
+}
+#content article#todosContent.home div {
+    overflow-y: scroll;
+}
+#content article#todosContent div ul::-webkit-scrollbar { display:none }
+#content article#todosContent div ul {
+    overflow-y: scroll;
+    height: 90%;
+}
+#content article#todosContent div ul li {
+    margin-bottom: 1em;
+}
